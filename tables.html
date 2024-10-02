@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Tables</title>
+    <style>
+      .table-span, tr, td{
+        border: solid;
+        border-width: 2px;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table-span">
+      <tr>
+        <td rowspan="2">Home</td>
+        <td>Contact</td>
+        <td>Service</td>
+      </tr>
+      <tr>
+        <!-- this are is in rowspan -->
+        <td>Contact</td>
+        <td>Service</td>
+      </tr>
+      <tr>
+        <td>Home</td>
+        <td colspan="2">Contact</td>
+        <!-- this area is in colspan -->
+         <!-- this area is in rowspan -->
+      </tr>
+    </table>
+  </body>
+</html>

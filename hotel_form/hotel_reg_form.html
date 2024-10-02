@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <title>form</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .header-container{
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 65%, rgb(254, 254, 254) 90%), url('header_picture.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        display: flex;          
+    justify-content: center; 
+    align-items: center;  
+      }
+      .header-container p{
+        font-size: 80px;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+      }
+      /* body{
+        background-color: blue;
+      } */
+       .data-table{
+        /* margin-top: 280px; */
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+       }
+       .data-table, td{
+        padding: 10px 10px 10px 10px;
+       }
+      .data-table, tr, td{
+        border: solid;
+        border-width: 0;
+        border-collapse: collapse;
+      }
+      .labels{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color: rgb(63, 63, 63);
+      }
+      .inputs{
+        font-size: 20px;
+        float: right;
+        margin-right: 0;
+        color: rgb(168, 168, 168);
+        padding: 2px 2px 2px 2px;
+      }
+      .confirm-button{
+        width: 170px;
+        height: 50px;
+        padding: 2px 2px 2px 2px;
+        font-size: 15px;
+        font-weight: bold;
+        border-width: 0;
+        background-color: red;
+        color: white;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header-container"><p>Hotel Booking Form</p></div>
+    <!-- <div class="heading"><p>Hotel Booking Form</p></div> -->
+
+
+    <table class="data-table">
+      <!-- first name -->
+      <tr>
+        <td>
+          <label for="" class="labels">First Name</label>
+          <input type="text" name="" id="" class="inputs">
+        </td>
+        <td>
+          <label for="" class="labels">Last Name</label>
+          <input type="text" name="" id="" class="inputs">
+        </td>
+      </tr>
+      <!-- first name end -->
+       <!-- Address start -->
+        <tr>
+          <td colspan="2" class="labels">Address</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="text" name="" id="" class="inputs" style="width: 100%; max-width: 1200px; margin: 0;">
+          </td>
+        </tr>
+        <!-- address end -->
+         <!-- city and state -->
+          <tr>
+            <td>
+              <label for="" class="labels">City</label>
+              <input type="text" name="" id="" class="inputs">
+            </td>
+            <td>
+              <label for="" class="labels">State</label>
+              <input type="text" name="" id="" class="inputs">
+            </td>
+          </tr>
+          <!-- city and state end -->
+           <!-- phone and email -->
+           <tr>
+            <td>
+              <label for="" class="labels">Mobile</label>
+              <input type="number" name="" id="" class="inputs">
+            </td>
+            <td>
+              <label for="" class="labels">Email</label>
+              <input type="email" name="" id="" class="inputs">
+            </td>
+          </tr>
+          <!-- phone and email ends -->
+          <!-- arrival -->
+          <tr>
+            <td colspan="2" class="labels">Arrival date & time</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="date" name="" id="" class="inputs" class="inputs" style="float: left; width: 400px;">
+            </td>
+            <td>
+              <input type="time" name="" id="" class="inputs" style="float: left; width: 400px;">
+            </td>
+          </tr>
+          <!-- arrivsl ends -->
+           <!-- departure -->
+           <tr>
+            <td colspan="2" class="labels">Departure date & time</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="date" name="" id="" class="inputs" class="inputs" style="float: left; width: 400px;">
+            </td>
+            <td>
+              <input type="time" name="" id="" class="inputs" style="float: left; width: 400px;">
+            </td>
+          </tr>
+          <!-- departure ends -->
+           <tr>
+            <td colspan="2" style="text-align:center;">
+              <button class="confirm-button">Confirm Booking</button>
+            </td>
+           </tr>
+    </table>
+  </body>
+</html>
